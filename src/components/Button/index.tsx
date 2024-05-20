@@ -11,6 +11,7 @@ import {
 } from './styles'
 
 type Props = TouchableOpacityProps & {
+  title: string
   type: 'primary' | 'secondary' | 'dark'
   icon?:
     | 'plus'
@@ -22,7 +23,7 @@ type Props = TouchableOpacityProps & {
     | undefined
 }
 
-export function Button({ type, icon = undefined, ...rest }: Props) {
+export function Button({ title, type, icon = undefined, ...rest }: Props) {
   return (
     <Container type={type} {...rest}>
       {icon === 'plus' && <PlusIcon type={type} />}
@@ -32,7 +33,7 @@ export function Button({ type, icon = undefined, ...rest }: Props) {
       {icon === 'trash' && <TrashIcon type={type} />}
       {icon === 'tag' && <TagIcon type={type} />}
 
-      <Title type={type}>Button</Title>
+      <Title type={type}>{title}</Title>
     </Container>
   )
 }
