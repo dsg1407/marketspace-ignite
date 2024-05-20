@@ -30,7 +30,7 @@ export function Input({ type = 'text', showFilter, ...rest }: Props) {
     <Container isFocused={isFocused}>
       {type === 'currency' && <Currency>R$</Currency>}
       <InputText
-        secureTextEntry={secureEntry}
+        secureTextEntry={type === 'password' ? secureEntry : false}
         placeholderTextColor={COLORS.BASE.GRAY_4}
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}

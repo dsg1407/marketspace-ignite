@@ -11,12 +11,12 @@ export function SignIn() {
         <FormGroup>
           <Label>Acesse sua conta</Label>
 
-          <Input placeholder="E-mail" />
-          <Input placeholder="Senha" />
+          <Input placeholder="E-mail" keyboardType="email-address" />
+          <Input placeholder="Senha" type="password" />
         </FormGroup>
       </Background>
 
-      {/* TODO componente Input /  Botão */}
+      {/* TODO componente  Botão */}
     </Container>
   )
 }
