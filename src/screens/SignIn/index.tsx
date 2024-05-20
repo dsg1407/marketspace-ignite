@@ -1,6 +1,17 @@
-import { Container, LogoGroup, Label, FormGroup, Background } from './styles'
+import {
+  Container,
+  LogoGroup,
+  Label,
+  FormGroup,
+  Background,
+  NewAccountGroup,
+} from './styles'
 
 import { Input } from '@/components/Input'
+import { Button } from '@/components/Button'
+
+function handleSignIn() {}
+function handleCreateAccount() {}
 
 export function SignIn() {
   return (
@@ -14,9 +25,18 @@ export function SignIn() {
           <Input placeholder="E-mail" keyboardType="email-address" />
           <Input placeholder="Senha" type="password" />
         </FormGroup>
+
+        <Button type="primary" title="Entrar" onPress={handleSignIn} />
       </Background>
 
-      {/* TODO componente  Botão */}
+      <NewAccountGroup>
+        <Label>Ainda não tem acesso?</Label>
+        <Button
+          type="secondary"
+          title="Criar uma conta"
+          onPress={handleCreateAccount}
+        />
+      </NewAccountGroup>
     </Container>
   )
 }
