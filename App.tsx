@@ -9,7 +9,7 @@ import {
   Karla_700Bold,
 } from '@expo-google-fonts/karla'
 
-import { SignIn } from '@/screens/SignIn'
+import { SignUp } from '@/screens/SignUp'
 import { Loading } from '@/components/Loading'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 
@@ -18,7 +18,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <SafeAreaProvider>
-        {fontsLoaded ? <SignIn /> : <Loading />}
+        {fontsLoaded ? <SignUp /> : <Loading />}
       </SafeAreaProvider>
 
       <StatusBar style="dark" translucent backgroundColor="transparent" />
