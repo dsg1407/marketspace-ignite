@@ -29,11 +29,27 @@ export function SignUp() {
         <FormGroup>
           <Avatar type="signup" />
 
-          <Input placeholder="Nome" />
-          <Input placeholder="E-mail" keyboardType="email-address" />
-          <Input placeholder="Telefone" keyboardType="phone-pad" />
-          <Input placeholder="Senha" type="password" />
-          <Input placeholder="Nome" type="password" />
+          <Input placeholder="Nome" textContentType="name" />
+          <Input
+            placeholder="E-mail"
+            keyboardType="email-address"
+            textContentType="emailAddress"
+          />
+          <Input
+            placeholder="Telefone"
+            keyboardType="phone-pad"
+            textContentType="telephoneNumber"
+          />
+          <Input
+            placeholder="Senha"
+            type="password"
+            textContentType="password"
+          />
+          <Input
+            placeholder="Confirmar senha"
+            type="password"
+            textContentType="password"
+          />
         </FormGroup>
         <Button title="Criar" type="dark" onPress={handleSignUp} />
 
