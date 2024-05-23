@@ -13,8 +13,7 @@ export default {
     PRODUCT: {
       BLUE: '#364D9D',
       BLUE_LIGHT: '#647AC7',
-
-      RED_LIGHT: '##EE7979',
+      RED_LIGHT: '#EE7979',
     },
   },
   FONT_FAMILY: {
