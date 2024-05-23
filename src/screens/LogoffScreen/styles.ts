@@ -12,9 +12,8 @@ export const Container = styled.View`
 `
 
 export const Frame = styled.View`
-  width: 90%;
+  width: 264px;
   align-items: center;
-  min-height: 25%;
   border-radius: 16px;
   padding: 16px 24px;
   background-color: ${({ theme }) => theme.COLORS.BASE.GRAY_7};
@@ -26,7 +25,7 @@ export const ButtonFrame = styled.View`
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin-top: 15px;
+  margin-top: 24px;
 `
 
 export const Title = styled.Text`
@@ -35,11 +34,10 @@ export const Title = styled.Text`
     font-family: ${theme.FONT_FAMILY.BOLD};
     color: ${theme.COLORS.BASE.GRAY_1};
   `}
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 `
 
 export const Description = styled.Text`
-  flex: 1;
   ${({ theme }) => css`
     font-size: ${theme.FONT_SIZE.M}px;
     font-family: ${theme.FONT_FAMILY.REGULAR};
